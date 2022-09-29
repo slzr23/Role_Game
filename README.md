@@ -5,7 +5,7 @@ Here is the repository of a game made by me in Python.  This game is automated a
 
 # Made in Python: Matplotlib & SVG
 
-In order to make a better graphical experience, the game has been realised with the python library "Matplotlib" (documentation: https://matplotlib.org/) The patch of grass is reprensented by a graphic, and each character has his own SVG File that you can also find in the repo. Each character is actually represented by a point that moves on the graph.
+In order to make a better graphical experience, the game has been realised with the python library "Matplotlib" (documentation: https://matplotlib.org/) The patch of grass is reprensented by a graphic, and each character has his own SVG File that you can also find in the repo. Each character is actually represented by a point that moves on the graph. You can find an example of execution in the file "Simulation.png".
 
 # Statistics: second graphic 
 
@@ -27,7 +27,7 @@ Voici le dépôt d'un jeu réalisé par mes soins en Python.  Ce jeu est automat
 
 # Made in Python : Matplotlib & SVG
 
-Afin de rendre l'expérience graphique plus agréable, le jeu a été réalisé avec la bibliothèque python "Matplotlib" (documentation : https://matplotlib.org/) La parcelle d'herbe est représentée par un graphique, et chaque personnage a son propre fichier SVG que vous pouvez également trouver dans le repo. Chaque personnage est en fait représenté par un point qui se déplace sur le graphique.
+Afin de rendre l'expérience graphique plus agréable, le jeu a été réalisé avec la bibliothèque python "Matplotlib" (documentation : https://matplotlib.org/) La parcelle d'herbe est représentée par un graphique, et chaque personnage a son propre fichier SVG que vous pouvez également trouver dans le repo. Chaque personnage est en fait représenté par un point qui se déplace sur le graphique. Vous pouvez retrouver un exemple d'execution dans le fichier "Simulation.png".
 
 # Statistiques : deuxième graphique 
 
