@@ -8,28 +8,28 @@ from svgpath2mpl import parse_path
 ##########ICONE##############
 
 """LOUP"""
-loup_path, attributes = svg2paths('src/loup.svg')
+loup_path, attributes = svg2paths('loup.svg')
 loup_marker = parse_path(attributes[0]['d'])
 loup_marker.vertices -= loup_marker.vertices.mean(axis=0)
 loup_marker = loup_marker.transformed(mpl.transforms.Affine2D().scale(-1,1))
 
 
 """ARCHER"""
-archer_path, attributes = svg2paths('src/archer.svg')
+archer_path, attributes = svg2paths('archer.svg')
 archer_marker = parse_path(attributes[0]['d'])
 archer_marker.vertices -= archer_marker.vertices.mean(axis=0)
 archer_marker = archer_marker.transformed(mpl.transforms.Affine2D().scale(-1,1))
 
 
 """GUERRIER"""
-guerrier_path, attributes = svg2paths('src/guerrier.svg')
+guerrier_path, attributes = svg2paths('guerrier.svg')
 guerrier_marker = parse_path(attributes[0]['d'])
 guerrier_marker.vertices -= guerrier_marker.vertices.mean(axis=0)
 guerrier_marker = guerrier_marker.transformed(mpl.transforms.Affine2D().scale(-1,1))
 
 
 """VOLEUR"""
-voleur_path, attributes = svg2paths('src/voleur.svg')
+voleur_path, attributes = svg2paths('voleur.svg')
 voleur_marker = parse_path(attributes[0]['d'])
 voleur_marker.vertices -= voleur_marker.vertices.mean(axis=0)
 voleur_marker = voleur_marker.transformed(mpl.transforms.Affine2D().scale(-1,1))
