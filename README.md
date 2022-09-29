@@ -1,7 +1,7 @@
 # ENGLISH-LANGUAGE VERSION
 # Turn-based role-playing game: Concept
 
-Here is the repository of a game made by me in Python.  This game is automated and is executed over 100 rounds. The game takes place on a patch of grass where different characters fight to make their community survive. You have for types of communities that are: Wolf, Warrior, Archer and Stealer. Each category has some particular aspects that you can find in the file "capacities."
+Here is the repository of a game made by me in Python.  This game is automated and is executed over 100 rounds. The game takes place on a patch of grass where different characters fight to make their community survive. You have for types of communities that are: Wolf, Warrior, Archer and Stealer. Each category has some particular aspects that you can find in the file "Capacities.png"
 
 # Made in Python: Matplotlib & SVG
 
@@ -23,7 +23,7 @@ Contact me: slzr.tech@gmail.com
 
 # Jeu de rôle au tour par tour : Concept
 
-Voici le dépôt d'un jeu réalisé par mes soins en Python.  Ce jeu est automatisé et se déroule sur 100 tours. Le jeu se déroule sur une parcelle d'herbe où différents personnages se battent pour faire survivre leur communauté. Vous avez quatre types de communautés qui sont : Loup, Guerrier, Archer et Voleur. Chaque catégorie a des aspects particuliers que vous pouvez trouver dans le fichier "capacités".
+Voici le dépôt d'un jeu réalisé par mes soins en Python.  Ce jeu est automatisé et se déroule sur 100 tours. Le jeu se déroule sur une parcelle d'herbe où différents personnages se battent pour faire survivre leur communauté. Vous avez quatre types de communautés qui sont : Loup, Guerrier, Archer et Voleur. Chaque catégorie a des aspects particuliers que vous pouvez trouver dans le fichier "Capacities.png".
 
 # Made in Python : Matplotlib & SVG
 
