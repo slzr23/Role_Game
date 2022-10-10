@@ -153,7 +153,7 @@ def simulation(x,y, loup_init, archer_init, guerrier_init, voleur_init):
     global_plot = set_plot()
 
     for s in range(100):
-        print(f'Tour {s}')
+        print(f'-------------Tour {s}-------------')
 
 ################DEPLACEMENT######################
         for loup in loup_population:  #LOUP
@@ -182,6 +182,16 @@ def simulation(x,y, loup_init, archer_init, guerrier_init, voleur_init):
                     archer.tiralarc(voleur)
 
         """ARCHER CAC"""
+        for archer in archer_population:
+            for loup in loup_population: #CAC ARCHER SUR LOUP
+                if abs(archer.x-loup.x)<2 and abs(archer.y-loup.y)<2:
+                    archer.corpsacorps(loup)
+            for guerrier in guerrier_population:  #CAC ARCHER SUR GUERRIER
+                if abs(archer.x-guerrier.x)<2 and abs(archer.y-guerrier.y)<2:
+                    archer.corpsacorps(guerrier)
+            for voleur in voleur_population:  #CAC ARCHER SUR VOLEUR
+                if abs(archer.x-voleur.x)<2 and abs(archer.y-voleur.y)<2 and randint(1,10)>voleur.stealth:
+                    archer.corpsacorps(voleur)
 
         loup_supp=[]
         """LOUP CAC"""
@@ -197,7 +207,7 @@ def simulation(x,y, loup_init, archer_init, guerrier_init, voleur_init):
             for voleur in voleur_population:  #CAC LOUP SUR VOLEUR
                 if abs(loup.x-voleur.x)<2 and abs(loup.y-voleur.y)<2 and randint(1,10)>voleur.stealth:
                     loup.corpsacorps(voleur)
-                    if voleur.hp<=0: #TRANSFORMATION ARCHERS EN LOUP
+                    if voleur.hp<=0: #TRANSFORMATION VOLEUR EN LOUP
                         loup_supp.append(Loup(voleur.x,voleur.y))
 
         """GUERRIER CAC"""
@@ -247,12 +257,36 @@ def simulation(x,y, loup_init, archer_init, guerrier_init, voleur_init):
 
         update_plot(grass,global_plot, loup_population, archer_population, guerrier_population,voleur_population, loup_pop_size,archer_pop_size, guerrier_pop_size, voleur_pop_size)
 
-################RESULTS CONSOLE######################
+################RESULTS CONSOLE & AFFICHAGE######################
 
         print("Nombre de loup:",str(len(loup_population)))
         print("Nombre d archer:",str(len(archer_population)))
         print("Nombre de guerrier:",str(len(guerrier_population)))
         print("Nombre de voleurs:",str(len(voleur_population)))
+
+        #VICTOIRE LOUP
+        if len(loup_population)>len(archer_population) and len(loup_population)>len(voleur_population) and len(loup_population)>len(guerrier_population):
+            plt.title("Victoire des Loups ! ", color='k')
+            print("Victoire des loups : ",str(len(loup_population))," survivants")
+
+
+        #VICTOIRE ARCHER
+        if len(archer_population)>len(loup_population) and len(archer_population)>len(voleur_population) and len(archer_population)>len(guerrier_population):
+            plt.title("Victoire des Archers ! ", color='g')
+            print("Victoire des archers : ",str(len(archer_population))," survivants")
+
+
+        #VICTOIRE GUERRIER
+        if len(guerrier_population)>len(loup_population) and len(guerrier_population)>len(voleur_population) and len(guerrier_population)>len(archer_population):
+            plt.title("Victoire des Guerriers ! ", color='r')
+            print("Victoire des guerriers : ",str(len(guerrier_population))," survivants")
+
+        #VICTOIRE VOLEUR
+        if len(voleur_population)>len(archer_population) and len(voleur_population)>len(loup_population) and len(voleur_population)>len(guerrier_population):
+            plt.title("Victoire des Voleurs", color='slategray')
+            print("Victoire des voleurs : ",str(len(voleur_population))," survivants")
+
+
 
     plt.waitforbuttonpress()
 
