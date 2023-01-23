@@ -3,6 +3,8 @@
 
 Here is the repository of a game made by me in Python.  This game is automated and is executed over 100 rounds. The game takes place on a patch of grass where different characters fight to make their community survive. You have for types of communities that are: Wolf, Warrior, Archer and Stealer. Each category has some particular aspects that you can find in the file "Capacities.png"
 
+![alt text](Capacities.png)
+
 # Made in Python: Matplotlib & SVG
 
 In order to make a better graphical experience, the game has been realised with the python library "Matplotlib" (documentation: https://matplotlib.org/) The patch of grass is reprensented by a graphic, and each character has his own SVG File that you can also find in the repo. Each character is actually represented by a point that moves on the graph. You can find an example of execution in the file "Simulation.png".
