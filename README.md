@@ -27,6 +27,8 @@ Contact me: slzr.tech@gmail.com
 
 Voici le dépôt d'un jeu réalisé par mes soins en Python.  Ce jeu est automatisé et se déroule sur 100 tours. Le jeu se déroule sur une parcelle d'herbe où différents personnages se battent pour faire survivre leur communauté. Vous avez quatre types de communautés qui sont : Loup, Guerrier, Archer et Voleur. Chaque catégorie a des aspects particuliers que vous pouvez trouver dans le fichier "Capacities.png".
 
+![alt text](Capacities.png)
+
 # Made in Python : Matplotlib & SVG
 
 Afin de rendre l'expérience graphique plus agréable, le jeu a été réalisé avec la bibliothèque python "Matplotlib" (documentation : https://matplotlib.org/) La parcelle d'herbe est représentée par un graphique, et chaque personnage a son propre fichier SVG que vous pouvez également trouver dans le repo. Chaque personnage est en fait représenté par un point qui se déplace sur le graphique. Vous pouvez retrouver un exemple d'execution dans le fichier "Simulation.png".
